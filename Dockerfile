@@ -33,6 +33,6 @@ RUN yum install -y \
     jemalloc-devel \
     jemalloc
 
-RUN cd && git clone http://github.com/xjdr/dotfiles && ./bootstrap.sh
-RUN cd && git clone http://github.com/xjdr/vim ${HOME}/.vim
+RUN cd ${HOME} && git clone https://github.com/xjdr/dotfiles && cd dotfiles && ./bootstrap.sh
+RUN cd ${HOME} && git clone http://github.com/xjdr/vim ${HOME}/.vim
 
