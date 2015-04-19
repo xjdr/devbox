@@ -12,5 +12,6 @@ RUN cd ${HOME} && git clone http://github.com/xjdr/vim ${HOME}/.vim
 RUN echo "net.core.somaxconn=65535" >> /etc/sysctl.conf
 RUN echo "*               hard    nofile          65535" >> /etc/security/limits.conf
 RUN echo "*               soft    nofile          65535" >> /etc/security/limits.conf
+RUN export TERM=xterm-256color
 
 
