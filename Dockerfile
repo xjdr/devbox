@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM centos:latest
 MAINTAINER Jeff Rose <jeff.rose12@gmail.com>
 
 RUN yum -y update
